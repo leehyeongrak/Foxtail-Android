@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cc.foxtail.diallayout.MainActivity">
+
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9"
+        tools:layout_editor_absoluteY="460dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageButton
+        android:src="@drawable/bottom1"
+        android:background="@android:color/transparent"
+        android:id="@+id/bottomtab1"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/bottomtab2"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <ImageButton
+        android:src="@drawable/bottom2"
+        android:background="@android:color/transparent"
+        android:id="@+id/bottomtab2"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toRightOf="@+id/bottomtab1"
+        app:layout_constraintRight_toLeftOf="@+id/bottomtab3"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <ImageButton
+        android:src="@drawable/bottom3"
+        android:background="@android:color/transparent"
+        android:id="@+id/bottomtab3"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toRightOf="@+id/bottomtab2"
+        app:layout_constraintRight_toLeftOf="@+id/bottomtab4"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <ImageButton
+        android:src="@drawable/bottom4"
+        android:background="@android:color/transparent"
+        android:id="@+id/bottomtab4"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toRightOf="@+id/bottomtab3"
+        app:layout_constraintRight_toLeftOf="@+id/bottomtab5"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <ImageButton
+        android:src="@drawable/bottom5"
+        android:background="@android:color/transparent"
+        android:id="@+id/bottomtab5"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toRightOf="@+id/bottomtab4"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline2"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15"
+        tools:layout_editor_absoluteY="77dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageButton
+        android:src="@drawable/plus"
+        android:background="@android:color/transparent"
+        android:id="@+id/button6"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.553"
+        android:layout_marginLeft="0dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:text="010-2449-0633"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintLeft_toRightOf="@+id/button6"
+        app:layout_constraintRight_toLeftOf="@+id/button7"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:src="@drawable/delete"
+        android:background="@android:color/transparent"
+        android:id="@+id/button7"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintLeft_toRightOf="@+id/textView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.519"
+        android:layout_marginRight="0dp" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        android:id="@+id/constraintLayout3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageButton
+            android:id="@+id/dialShop"
+            android:layout_width="77dp"
+            android:layout_height="77dp"
+            android:layout_marginLeft="0dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/dialshop"
+            app:layout_constraintBottom_toTopOf="@+id/dialCall"
+            app:layout_constraintLeft_toRightOf="@+id/dial0"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dial9" />
+
+        <ImageButton
+            android:id="@+id/dial0"
+            android:layout_width="77dp"
+            android:layout_height="77dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/dial0"
+            app:layout_constraintBottom_toTopOf="@+id/dialCall"
+            app:layout_constraintLeft_toRightOf="@+id/dialStar"
+            app:layout_constraintRight_toLeftOf="@+id/dialShop"
+            app:layout_constraintTop_toBottomOf="@+id/dial8" />
+
+        <ImageButton
+            android:id="@+id/dialStar"
+            android:layout_width="77dp"
+            android:layout_height="77dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/dialstar"
+            app:layout_constraintBottom_toTopOf="@+id/dialCall"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/dial0"
+            app:layout_constraintTop_toBottomOf="@+id/dial7" />
+
+        <ImageButton
+            android:id="@+id/dial8"
+            android:layout_width="77dp"
+            android:layout_height="77dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/dial8"
+            app:layout_constraintBottom_toTopOf="@+id/dial0"
+            app:layout_constraintLeft_toRightOf="@+id/dial7"
+            app:layout_constraintRight_toLeftOf="@+id/dial9"
+            app:layout_constraintTop_toBottomOf="@+id/dial5" />
+
+        <ImageButton
+            android:id="@+id/dial1"
+            android:layout_width="77dp"
+            android:layout_height="77dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/dial1"
+            app:layout_constraintBottom_toTopOf="@+id/dial4"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/dial2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/dial2"
+            android:layout_width="77dp"
+            android:layout_height="77dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/dial2"
+            app:layout_constraintBottom_toTopOf="@+id/dial5"
+            app:layout_constraintLeft_toRightOf="@+id/dial1"
+            app:layout_constraintRight_toLeftOf="@+id/dial3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/dial3"
+            android:layout_width="77dp"
+            android:layout_height="77dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/dial3"
+            app:layout_constraintBottom_toTopOf="@+id/dial6"
+            app:layout_constraintLeft_toRightOf="@+id/dial2"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/dial4"
+            android:layout_width="77dp"
+            android:layout_height="77dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/dial4"
+            app:layout_constraintBottom_toTopOf="@+id/dial7"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/dial5"
+            app:layout_constraintTop_toBottomOf="@+id/dial1" />
+
+        <ImageButton
+            android:id="@+id/dial5"
+            android:layout_width="77dp"
+            android:layout_height="77dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/dial5"
+            app:layout_constraintBottom_toTopOf="@+id/dial8"
+            app:layout_constraintLeft_toRightOf="@+id/dial4"
+            app:layout_constraintRight_toLeftOf="@+id/dial6"
+            app:layout_constraintTop_toBottomOf="@+id/dial2" />
+
+        <ImageButton
+            android:id="@+id/dial6"
+            android:layout_width="77dp"
+            android:layout_height="77dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/dial6"
+            app:layout_constraintBottom_toTopOf="@+id/dial9"
+            app:layout_constraintLeft_toRightOf="@+id/dial5"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dial3" />
+
+        <ImageButton
+            android:id="@+id/dial7"
+            android:layout_width="77dp"
+            android:layout_height="77dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/dial7"
+            app:layout_constraintBottom_toTopOf="@+id/dialStar"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/dial8"
+            app:layout_constraintTop_toBottomOf="@+id/dial4" />
+
+
+        <ImageButton
+            android:id="@+id/dial9"
+            android:layout_width="77dp"
+            android:layout_height="77dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/dial9"
+            app:layout_constraintBottom_toTopOf="@+id/dialShop"
+            app:layout_constraintLeft_toRightOf="@+id/dial8"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dial6" />
+
+        <ImageButton
+            android:id="@+id/dialCall"
+            android:layout_width="77dp"
+            android:layout_height="77dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/dialcall"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dial0" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
